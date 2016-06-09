@@ -7,7 +7,7 @@ class Dexd < Formula
     bin.install "build/dexd"
   end
 
-  plist_options :manual => "dexd"
+  plist_options :manual => "dexd -cert_dir=#{HOMEBREW_PREFIX}/var/dexd"
 
   def plist
     <<-EOS.undent
